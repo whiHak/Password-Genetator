@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h3>Password Generator</h3>
+      <div class="pwdDisplayBox">
+        <span id="result"></span>
+        <i class="bx bxs-copy" id="copy"></i>
+      </div>
+      <div class="setters">
+        <div id="passLength" class="set">
+          <p class="pwdLen">Password Length</p>
+          <span><input type="text" id="pwdlen" /></span>
+        </div>
+        <div id="uppercase" class="set">
+          <p class="upper">Include uppercase</p>
+          <span><input type="checkbox" id="upperCase" /></span>
+        </div>
+        <div id="lowercase" class="set">
+          <p class="lower">Include lowercase</p>
+          <span><input type="checkbox" id="lowerCase" /></span>
+        </div>
+        <div id="number" class="set">
+          <p class="num">Include Number</p>
+          <span><input type="checkbox" id="Num" /></span>
+        </div>
+        <div id="symbol" class="set">
+          <p class="num">Include symbols</p>
+          <span><input type="checkbox" id="symb" /></span>
+        </div>
+      </div>
+      <button id="generateBtn">Generate Password</button>
+      <p id="footer">
+        By
+        <a href="https://www.linkedin.com/in/betselot-abraham-184753285"
+          >Betselot Abraham</a
+        >
+      </p>
+    </div>
+
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
